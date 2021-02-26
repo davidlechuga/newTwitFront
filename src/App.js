@@ -20,7 +20,7 @@ function App(props) {
 			<Switch>
 				<Route path="/" component={Index} exact />
 				<Route path="/informes" component={Informes} exact />
-				<Route path="/resumenes" component={Resumenes} exact />
+				{/* <Route path="/resumenes" component={Resumenes} exact /> */}
 				<Route path="/landing" component={landing} exact />
 			</Switch>
 		</Router>

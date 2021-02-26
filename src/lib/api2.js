@@ -26,16 +26,16 @@
 //   return searchtwits
 // },
 
-export default {
-	async getTwits() {
-		// console.log('get')
-		const response = await fetch(`https://serveanalystwit.mybluemix.net/resumenes`);
-		if (!response.ok) throw new Error('Ocurrió un error al obtener los posts');
-		const jsonBody = await response.json();
+// export default {
+// 	async getTwits() {
+// 		// console.log('get')
+// 		const response = await fetch(`https://servetwit.mybluemix.net/resumenes`);
+// 		if (!response.ok) throw new Error('Ocurrió un error al obtener los posts');
+// 		const jsonBody = await response.json();
 
-		return jsonBody;
+// 		return jsonBody;
 
-		// console.log(statuses[0].full_text);
-		// console.log(statuses[1].full_text);n
-	}
-};
+// 		// console.log(statuses[0].full_text);
+// 		// console.log(statuses[1].full_text);n
+// 	}
+// };

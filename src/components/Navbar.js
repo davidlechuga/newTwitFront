@@ -6,35 +6,35 @@ import NavbarItem from './NavbarItem'
 import NavbarLink from './NavbarLink'
 
 
-function Navbar (props){
-   return(
+function Navbar(props) {
+    return (
 
-            <nav className="navbar navbar-expand-lg">
-                <NavbarBrand
+        <nav className="navbar navbar-expand-lg">
+            <NavbarBrand
                 to="/"
                 text="holas"
-                />
+            />
 
-                <NavbarNav>
-                    <NavbarItem>
-                        <NavbarLink
+            <NavbarNav>
+                <NavbarItem>
+                    {/* <NavbarLink
                             to="/resumenes"
                             text= "Resúmenes"
-                        />
-                        <NavbarLink
-                            to="/informes"
-                            text= "Informes"
-                        />
-                        <NavbarLink
-                            to="/landing"
-                            text= "Home"
-                        />
-                        
-                    </NavbarItem>
-                </NavbarNav>
-                
-            </nav>
-   )
+                        /> */}
+                    <NavbarLink
+                        to="/informes"
+                        text="Informes"
+                    />
+                    <NavbarLink
+                        to="/landing"
+                        text="Home"
+                    />
+
+                </NavbarItem>
+            </NavbarNav>
+
+        </nav>
+    )
 }
 
 export default Navbar

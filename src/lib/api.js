@@ -1,7 +1,7 @@
 export default {
 	async getTwits(word) {
 		// console.log('get')
-		const response = await fetch(`https://serveanalystwit.mybluemix.net/search/${word}`);
+		const response = await fetch(`https://servetwit.mybluemix.net/search/${word}`);
 		if (!response.ok) throw new Error('Ocurrió un error al obtener los posts');
 		const jsonBody = await response.json();
 
